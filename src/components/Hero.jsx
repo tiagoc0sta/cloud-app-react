@@ -1,8 +1,8 @@
 import React from 'react';
-import { AiFillCloud } from 'react-icons/ai';
-import { FiDatabase } from 'react-icons/fi';
+import { FaDatabase } from 'react-icons/fa';
 import { HiPaperAirplane } from 'react-icons/hi';
-import { BsServer } from 'react-icons/bs';
+import { BsFillCloudUploadFill } from 'react-icons/bs';
+import { AiFillDatabase } from 'react-icons/ai';
 
 import bgImg from '../assets/cyber-bg.png';
 
@@ -28,11 +28,22 @@ const Hero = () => {
         {/*Data Services*/}
         <div className='absolute flex flex-col py-8 md:min-w-[760px] bottom-[5%] mx-1 md:left-1/2 transform md:-translate-x-1/2 bg-zinc-200 border border-slate-300 rounded-xl text-center shadow-xl'>
           <p>Data Services</p>
-          <div>
-            <p>Icon. App Security</p>
-            <p>Icon. Dashboard Design</p>
-            <p>Icon. Cloud Data</p>
-            <p>Icon. API</p>
+          <div className='flex justify-beetween flwx-wrap px-4'>
+            <p className='flex px-4 py-2 text-slate-500'>
+              <BsFillCloudUploadFill className='h-6 text-indigo-600' />
+              Icon. App Security
+            </p>
+            <p className='flex px-4 py-2 text-slate-500'>
+              <FaDatabase className='h-6 text-indigo-600' /> Icon. Dashboard
+              Design
+            </p>
+            <p className='flex px-4 py-2 text-slate-500'>
+              <AiFillDatabase className='h-6 text-indigo-600' />
+              Icon. Cloud Data
+            </p>
+            <p className='flex px-4 py-2 text-slate-500'>
+              <HiPaperAirplane className='h-6 text-indigo-600' /> Icon. API
+            </p>
           </div>
         </div>
       </div>
