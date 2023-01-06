@@ -30,7 +30,7 @@ const Navbar = () => {
         </div>
 
         {/*Mobile */}
-        <div className='md:hidden' onClick={handleClick}>
+        <div className='md:hidden mr-4' onClick={handleClick}>
           {!nav ? <AiOutlineMenu /> : <AiOutlineClose />}
         </div>
       </div>
